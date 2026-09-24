@@ -8,7 +8,7 @@ ImportExportXml:
     UniqueName: VnetGitTest
     LocalizedNames:
       LocalizedName:
-        '@description': VNet Git Test
+        '@description': VnetGitTest
         '@languagecode': 1033
     Descriptions: 
     Version: 1.0.0.1

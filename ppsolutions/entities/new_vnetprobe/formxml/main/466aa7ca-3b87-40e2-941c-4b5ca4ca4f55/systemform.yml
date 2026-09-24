@@ -1,0 +1,60 @@
+systemform:
+  formid: '{466aa7ca-3b87-40e2-941c-4b5ca4ca4f55}'
+  IntroducedVersion: 1.0.0.1
+  FormPresentation: 1
+  FormActivationState: 1
+  form:
+    tabs:
+      tab:
+        '@verticallayout': true
+        '@id': '{93f6f4ac-756c-4026-8d48-ede119343d88}'
+        '@IsUserDefined': 1
+        labels:
+          label:
+            '@description': General
+            '@languagecode': 1033
+        columns:
+          column:
+            '@width': 100%
+            sections:
+              section:
+                '@showlabel': false
+                '@showbar': false
+                '@IsUserDefined': 0
+                '@id': '{f533b257-b6ae-46d2-87a9-b85f67f32dfa}'
+                labels:
+                  label:
+                    '@description': General
+                    '@languagecode': 1033
+                rows:
+                  row:
+                  - cell:
+                      '@id': '{5bb985d5-36eb-4f1d-9f19-0e8096a94197}'
+                      labels:
+                        label:
+                          '@description': Name
+                          '@languagecode': 1033
+                      control:
+                        '@id': new_name
+                        '@classid': '{4273EDBD-AC1D-40d3-9FB2-095C621B552D}'
+                        '@datafieldname': new_name
+                  - cell:
+                      '@id': '{e86cee91-ff47-4dfa-ac09-0a700a576182}'
+                      labels:
+                        label:
+                          '@description': Owner
+                          '@languagecode': 1033
+                      control:
+                        '@id': ownerid
+                        '@classid': '{270BD3DB-D9AF-4782-9025-509E298DEC0A}'
+                        '@datafieldname': ownerid
+  IsCustomizable: 1
+  CanBeDeleted: 1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Information
+      '@languagecode': 1033
+  Descriptions:
+    Description:
+      '@description': A form for this entity.
+      '@languagecode': 1033

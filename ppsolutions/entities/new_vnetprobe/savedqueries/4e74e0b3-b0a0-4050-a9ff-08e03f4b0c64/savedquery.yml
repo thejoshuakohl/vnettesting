@@ -1,0 +1,41 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 0
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{4e74e0b3-b0a0-4050-a9ff-08e03f4b0c64}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': new_name
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': new_vnetprobeid
+        cell:
+        - '@name': new_name
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 1
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': new_vnetprobe
+        attribute:
+        - '@name': new_vnetprobeid
+        - '@name': new_name
+        - '@name': createdon
+        order:
+          '@attribute': new_name
+          '@descending': false
+  IntroducedVersion: 1.0.0.1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Vnet Probe Advanced Find View
+      '@languagecode': 1033

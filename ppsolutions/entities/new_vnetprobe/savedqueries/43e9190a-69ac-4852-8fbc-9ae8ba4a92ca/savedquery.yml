@@ -1,0 +1,53 @@
+savedquery:
+  IsCustomizable: 1
+  CanBeDeleted: 0
+  isquickfindquery: 1
+  isprivate: 0
+  isdefault: 1
+  savedqueryid: '{43e9190a-69ac-4852-8fbc-9ae8ba4a92ca}'
+  layoutxml:
+    grid:
+      '@name': resultset
+      '@jump': new_name
+      '@select': 1
+      '@icon': 1
+      '@preview': 1
+      row:
+        '@name': result
+        '@id': new_vnetprobeid
+        cell:
+        - '@name': new_name
+          '@width': 300
+        - '@name': createdon
+          '@width': 125
+  querytype: 4
+  fetchxml:
+    fetch:
+      '@version': 1.0
+      '@mapping': logical
+      entity:
+        '@name': new_vnetprobe
+        attribute:
+        - '@name': new_vnetprobeid
+        - '@name': new_name
+        - '@name': createdon
+        order:
+          '@attribute': new_name
+          '@descending': false
+        filter:
+        - '@type': and
+          condition:
+            '@attribute': statecode
+            '@operator': eq
+            '@value': 0
+        - '@type': or
+          '@isquickfindfields': 1
+          condition:
+            '@attribute': new_name
+            '@operator': like
+            '@value': '{0}'
+  IntroducedVersion: 1.0.0.1
+  LocalizedNames:
+    LocalizedName:
+      '@description': Quick Find Active Vnet Probes
+      '@languagecode': 1033

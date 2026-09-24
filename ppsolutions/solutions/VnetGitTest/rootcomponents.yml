@@ -1,1 +1,5 @@
-RootComponents: 
+RootComponents:
+  RootComponent:
+    '@type': 1
+    '@schemaName': new_vnetprobe
+    '@behavior': 0
